@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SceneTransitionManager
+   | Template Unity Project documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SceneTransitionManager
+   | Template Unity Project documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Scenes.SceneTransitionManager">
+  
+  
+  <h1 id="OmiyaGames_Scenes_SceneTransitionManager" data-uid="OmiyaGames.Scenes.SceneTransitionManager" class="text-break">Class SceneTransitionManager
+  </h1>
+  <div class="markdown level0 summary"><p>A singleton script that retains information about which scene to switch to.
+Where possible, it&apos;ll animate the <pre><code>SceneTransitionMenu</code></pre> before
+switching scenes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SceneTransitionManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Scenes.html">OmiyaGames.Scenes</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_Scenes_SceneTransitionManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SceneTransitionManager : ISingletonScript</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_SceneLoadingProgressComplete" data-uid="OmiyaGames.Scenes.SceneTransitionManager.SceneLoadingProgressComplete">SceneLoadingProgressComplete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float SceneLoadingProgressComplete = 0.9F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_Credits_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.Credits*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_Credits" data-uid="OmiyaGames.Scenes.SceneTransitionManager.Credits">Credits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneInfo Credits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_CurrentScene_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.CurrentScene*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_CurrentScene" data-uid="OmiyaGames.Scenes.SceneTransitionManager.CurrentScene">CurrentScene</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneInfo CurrentScene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_CursorMode_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.CursorMode*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_CursorMode" data-uid="OmiyaGames.Scenes.SceneTransitionManager.CursorMode">CursorMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CursorLockMode CursorMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CursorLockMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_IsLoadingScene_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.IsLoadingScene*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_IsLoadingScene" data-uid="OmiyaGames.Scenes.SceneTransitionManager.IsLoadingScene">IsLoadingScene</h4>
+  <div class="markdown level1 summary"><p>Indicates whether a scene is already being loaded by the manager or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLoadingScene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_LastCursorMode_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LastCursorMode*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_LastCursorMode" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LastCursorMode">LastCursorMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CursorLockMode LastCursorMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CursorLockMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_Levels_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.Levels*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_Levels" data-uid="OmiyaGames.Scenes.SceneTransitionManager.Levels">Levels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneInfo[] Levels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_Loading_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.Loading*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_Loading" data-uid="OmiyaGames.Scenes.SceneTransitionManager.Loading">Loading</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneInfo Loading { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_MainMenu_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.MainMenu*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_MainMenu" data-uid="OmiyaGames.Scenes.SceneTransitionManager.MainMenu">MainMenu</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneInfo MainMenu { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_NumLevels_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.NumLevels*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_NumLevels" data-uid="OmiyaGames.Scenes.SceneTransitionManager.NumLevels">NumLevels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumLevels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_UpcomingScene_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.UpcomingScene*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_UpcomingScene" data-uid="OmiyaGames.Scenes.SceneTransitionManager.UpcomingScene">UpcomingScene</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneInfo UpcomingScene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_LoadCredits_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadCredits*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_LoadCredits" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadCredits">LoadCredits()</h4>
+  <div class="markdown level1 summary"><p>Loads the Credits scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadCredits()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_LoadMainMenu_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadMainMenu*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_LoadMainMenu" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadMainMenu">LoadMainMenu()</h4>
+  <div class="markdown level1 summary"><p>Loads the Main Menu scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadMainMenu()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_LoadNextLevel_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadNextLevel*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_LoadNextLevel" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadNextLevel">LoadNextLevel()</h4>
+  <div class="markdown level1 summary"><p>Loads the next scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadNextLevel()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_LoadScene_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadScene*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_LoadScene_OmiyaGames_SceneInfo_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.LoadScene(OmiyaGames.SceneInfo)">LoadScene(SceneInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadScene(SceneInfo scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.SceneInfo.html">SceneInfo</a></td>
+        <td><span class="parametername">scene</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_ReloadCurrentScene_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.ReloadCurrentScene*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_ReloadCurrentScene" data-uid="OmiyaGames.Scenes.SceneTransitionManager.ReloadCurrentScene">ReloadCurrentScene()</h4>
+  <div class="markdown level1 summary"><p>Reloads the current scene, effectively resetting it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadCurrentScene()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_RevertCursorLockMode_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.RevertCursorLockMode*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_RevertCursorLockMode" data-uid="OmiyaGames.Scenes.SceneTransitionManager.RevertCursorLockMode">RevertCursorLockMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevertCursorLockMode()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Scenes_SceneTransitionManager_UnlockNextLevel_" data-uid="OmiyaGames.Scenes.SceneTransitionManager.UnlockNextLevel*"></a>
+  <h4 id="OmiyaGames_Scenes_SceneTransitionManager_UnlockNextLevel" data-uid="OmiyaGames.Scenes.SceneTransitionManager.UnlockNextLevel">UnlockNextLevel()</h4>
+  <div class="markdown level1 summary"><p>Attempts to unlock the next level, if it hasn&apos;t been unlocked already.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnlockNextLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if a new level is unlocked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OmiyaGames.Scenes.SceneTransition.html">SceneTransition</a></div>
+      <div><a class="xref" href="OmiyaGames.Singleton.html">Singleton</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

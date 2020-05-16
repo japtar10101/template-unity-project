@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IPooledObject
+   | Template Unity Project documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IPooledObject
+   | Template Unity Project documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.IPooledObject">
+  
+  
+  <h1 id="OmiyaGames_IPooledObject" data-uid="OmiyaGames.IPooledObject" class="text-break">Class IPooledObject
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract class with functions that triggers during</p>
+<pre><code>PoolingManager</code></pre>&apos;s events.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">IPooledObject</span></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.PooledObject.html">PooledObject</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.html">OmiyaGames</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_IPooledObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class IPooledObject : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="OmiyaGames_IPooledObject_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Revision History:
+<table><thead><tr><th></th><th>DateNameDescription</th></tr></thead><tbody><tr><td></td><td>5/18/2015TaroInitial version</td></tr><tr><td></td><td>10/9/2018TaroAdding <pre><code>PoolSet</code></pre> and <pre><code>event</code></pre>s.</td></tr></tbody></table></p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_IPooledObject_OriginalPrefab_" data-uid="OmiyaGames.IPooledObject.OriginalPrefab*"></a>
+  <h4 id="OmiyaGames_IPooledObject_OriginalPrefab" data-uid="OmiyaGames.IPooledObject.OriginalPrefab">OriginalPrefab</h4>
+  <div class="markdown level1 summary"><p>Gets the original prefab this object was pooled from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject OriginalPrefab { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><p>The original prefab.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_IPooledObject_OriginalScript_" data-uid="OmiyaGames.IPooledObject.OriginalScript*"></a>
+  <h4 id="OmiyaGames_IPooledObject_OriginalScript" data-uid="OmiyaGames.IPooledObject.OriginalScript">OriginalScript</h4>
+  <div class="markdown level1 summary"><p>Gets the original script this object was pooled from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPooledObject OriginalScript { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.IPooledObject.html">IPooledObject</a></td>
+        <td><p>The original prefab.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OmiyaGames_IPooledObject_AfterActivated_" data-uid="OmiyaGames.IPooledObject.AfterActivated*"></a>
+  <h4 id="OmiyaGames_IPooledObject_AfterActivated_PoolingManager_" data-uid="OmiyaGames.IPooledObject.AfterActivated(PoolingManager)">AfterActivated(PoolingManager)</h4>
+  <div class="markdown level1 summary"><p>Called when this instance -- already initialized and pooled --
+is activated by PoolingManager for re-use. Note this method will
+be called before Start or Awake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterActivated(PoolingManager manager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PoolingManager</span></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_IPooledObject_AfterDeactivate_" data-uid="OmiyaGames.IPooledObject.AfterDeactivate*"></a>
+  <h4 id="OmiyaGames_IPooledObject_AfterDeactivate_PoolingManager_" data-uid="OmiyaGames.IPooledObject.AfterDeactivate(PoolingManager)">AfterDeactivate(PoolingManager)</h4>
+  <div class="markdown level1 summary"><p>Called when this instance -- already initialized and pooled -- is deactivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterDeactivate(PoolingManager manager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PoolingManager</span></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_IPooledObject_AfterInitialized_" data-uid="OmiyaGames.IPooledObject.AfterInitialized*"></a>
+  <h4 id="OmiyaGames_IPooledObject_AfterInitialized_PoolingManager_" data-uid="OmiyaGames.IPooledObject.AfterInitialized(PoolingManager)">AfterInitialized(PoolingManager)</h4>
+  <div class="markdown level1 summary"><p>Called when this instance is initialized by PoolingManager,
+but before Start or Awake is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AfterInitialized(PoolingManager manager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PoolingManager</span></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_IPooledObject_Awake_" data-uid="OmiyaGames.IPooledObject.Awake*"></a>
+  <h4 id="OmiyaGames_IPooledObject_Awake" data-uid="OmiyaGames.IPooledObject.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Awake()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_IPooledObject_OnDestroy_" data-uid="OmiyaGames.IPooledObject.OnDestroy*"></a>
+  <h4 id="OmiyaGames_IPooledObject_OnDestroy" data-uid="OmiyaGames.IPooledObject.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDestroy()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_IPooledObject_OnDisable_" data-uid="OmiyaGames.IPooledObject.OnDisable*"></a>
+  <h4 id="OmiyaGames_IPooledObject_OnDisable" data-uid="OmiyaGames.IPooledObject.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_IPooledObject_SetPoolState_" data-uid="OmiyaGames.IPooledObject.SetPoolState*"></a>
+  <h4 id="OmiyaGames_IPooledObject_SetPoolState_System_Boolean_" data-uid="OmiyaGames.IPooledObject.SetPoolState(System.Boolean)">SetPoolState(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool SetPoolState(bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">active</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if any changes were made to the Pool.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_IPooledObject_Start_" data-uid="OmiyaGames.IPooledObject.Start*"></a>
+  <h4 id="OmiyaGames_IPooledObject_Start" data-uid="OmiyaGames.IPooledObject.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Start()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="OmiyaGames_IPooledObject_OnAfterActivated" data-uid="OmiyaGames.IPooledObject.OnAfterActivated">OnAfterActivated</h4>
+  <div class="markdown level1 summary"><p>Called when this instance -- already initialized and pooled --
+is activated by PoolingManager for re-use. Note this method will
+be called before Start or Awake.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IPooledObject, PoolingManager&gt; OnAfterActivated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="OmiyaGames.IPooledObject.html">IPooledObject</a>, <span class="xref">PoolingManager</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_IPooledObject_OnAfterDeactivated" data-uid="OmiyaGames.IPooledObject.OnAfterDeactivated">OnAfterDeactivated</h4>
+  <div class="markdown level1 summary"><p>Called when this instance -- already initialized and pooled -- is deactivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IPooledObject, PoolingManager&gt; OnAfterDeactivated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="OmiyaGames.IPooledObject.html">IPooledObject</a>, <span class="xref">PoolingManager</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_IPooledObject_OnAfterInitialized" data-uid="OmiyaGames.IPooledObject.OnAfterInitialized">OnAfterInitialized</h4>
+  <div class="markdown level1 summary"><p>Called when this instance is initialized by PoolingManager,
+but before Start or Awake is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IPooledObject, PoolingManager&gt; OnAfterInitialized</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="OmiyaGames.IPooledObject.html">IPooledObject</a>, <span class="xref">PoolingManager</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

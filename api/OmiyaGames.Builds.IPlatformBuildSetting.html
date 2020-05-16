@@ -1,0 +1,894 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IPlatformBuildSetting
+   | Template Unity Project documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IPlatformBuildSetting
+   | Template Unity Project documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Builds.IPlatformBuildSetting">
+  
+  
+  <h1 id="OmiyaGames_Builds_IPlatformBuildSetting" data-uid="OmiyaGames.Builds.IPlatformBuildSetting" class="text-break">Class IPlatformBuildSetting
+  </h1>
+  <div class="markdown level0 summary"><p>Base build settings for any platform.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="OmiyaGames.Builds.IBuildSetting.html">IBuildSetting</a></div>
+    <div class="level2"><a class="xref" href="OmiyaGames.Builds.IChildBuildSetting.html">IChildBuildSetting</a></div>
+    <div class="level3"><span class="xref">IPlatformBuildSetting</span></div>
+      <div class="level4"><a class="xref" href="OmiyaGames.Builds.IStandaloneBuildSetting.html">IStandaloneBuildSetting</a></div>
+      <div class="level4"><a class="xref" href="OmiyaGames.Builds.WebGlBuildSetting.html">WebGlBuildSetting</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IChildBuildSetting.html#OmiyaGames_Builds_IChildBuildSetting_Build">IChildBuildSetting.Build()</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IChildBuildSetting.html#OmiyaGames_Builds_IChildBuildSetting_Parent">IChildBuildSetting.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_DefaultDateTimeText">IBuildSetting.DefaultDateTimeText</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_GetPathPreview_System_Text_StringBuilder_">IBuildSetting.GetPathPreview(StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_SetupResults">IBuildSetting.SetupResults()</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_DisplayPreBuildCheckFailed_System_String_">IBuildSetting.DisplayPreBuildCheckFailed(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_BuildGroup_System_Collections_Generic_IEnumerable_OmiyaGames_Builds_IChildBuildSetting__OmiyaGames_Builds_BuildPlayersResult_">IBuildSetting.BuildGroup(IEnumerable&lt;IChildBuildSetting&gt;, BuildPlayersResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_AddSetting_OmiyaGames_Builds_IBuildSetting_System_Collections_Generic_List_OmiyaGames_Builds_IChildBuildSetting__OmiyaGames_Builds_IChildBuildSetting_">IBuildSetting.AddSetting(IBuildSetting, List&lt;IChildBuildSetting&gt;, IChildBuildSetting)</a>
+    </div>
+    <div>
+      <a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_RemoveSetting_System_Collections_Generic_List_OmiyaGames_Builds_IChildBuildSetting__System_Int32_">IBuildSetting.RemoveSetting(List&lt;IChildBuildSetting&gt;, Int32)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Builds.html">OmiyaGames.Builds</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_Builds_IPlatformBuildSetting_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class IPlatformBuildSetting : IChildBuildSetting</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_archiveSettings" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.archiveSettings">archiveSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IPlatformBuildSetting.ArchiveSettings archiveSettings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveSettings.html">IPlatformBuildSetting.ArchiveSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_buildNumber" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.buildNumber">buildNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int buildNumber</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_customScenes" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.customScenes">customScenes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SceneSetting customScenes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.SceneSetting.html">SceneSetting</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_customScriptDefineSymbols" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.customScriptDefineSymbols">customScriptDefineSymbols</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScriptDefineSymbolsSetting customScriptDefineSymbols</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.ScriptDefineSymbolsSetting.html">ScriptDefineSymbolsSetting</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_debugSettings" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.debugSettings">debugSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IPlatformBuildSetting.DevelopmentSettings debugSettings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IPlatformBuildSetting.DevelopmentSettings.html">IPlatformBuildSetting.DevelopmentSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_enableAssertions" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.enableAssertions">enableAssertions</h4>
+  <div class="markdown level1 summary"><p>Only effective if debugSettings is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool enableAssertions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_enableStrictMode" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.enableStrictMode">enableStrictMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool enableStrictMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_folderName" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.folderName">folderName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CustomFileName folderName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.CustomFileName.html">CustomFileName</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_FileExtension_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.FileExtension*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_FileExtension" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.FileExtension">FileExtension</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FileExtension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_FileName_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.FileName*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_FileName" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.FileName">FileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomFileName FileName { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.CustomFileName.html">CustomFileName</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_Options_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.Options*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_Options" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.Options">Options</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual BuildOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_Target_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.Target*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_Target" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.Target">Target</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract BuildTarget Target { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_TargetGroup_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.TargetGroup*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_TargetGroup" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.TargetGroup">TargetGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract BuildTargetGroup TargetGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTargetGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_ArchiveBuild_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveBuild*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_ArchiveBuild_OmiyaGames_Builds_BuildPlayersResult_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveBuild(OmiyaGames.Builds.BuildPlayersResult)">ArchiveBuild(BuildPlayersResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; ArchiveBuild(BuildPlayersResult results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.BuildPlayersResult.html">BuildPlayersResult</a></td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_ArchiveBuildHelper_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveBuildHelper*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_ArchiveBuildHelper_OmiyaGames_Builds_BuildPlayersResult_System_String_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveBuildHelper(OmiyaGames.Builds.BuildPlayersResult,System.String)">ArchiveBuildHelper(BuildPlayersResult, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;bool&gt; ArchiveBuildHelper(BuildPlayersResult results, string archiveFolderName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.BuildPlayersResult.html">BuildPlayersResult</a></td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">archiveFolderName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_ArchiveBuildHelper_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveBuildHelper*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_ArchiveBuildHelper_OmiyaGames_Builds_IBuildSetting_OmiyaGames_Builds_IPlatformBuildSetting_ArchiveSettings_OmiyaGames_Builds_BuildPlayersResult_System_String_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveBuildHelper(OmiyaGames.Builds.IBuildSetting,OmiyaGames.Builds.IPlatformBuildSetting.ArchiveSettings,OmiyaGames.Builds.BuildPlayersResult,System.String)">ArchiveBuildHelper(IBuildSetting, IPlatformBuildSetting.ArchiveSettings, BuildPlayersResult, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Task&lt;bool&gt; ArchiveBuildHelper(IBuildSetting buildSetting, IPlatformBuildSetting.ArchiveSettings archiveSettings, BuildPlayersResult results, string archiveFolderName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IBuildSetting.html">IBuildSetting</a></td>
+        <td><span class="parametername">buildSetting</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IPlatformBuildSetting.ArchiveSettings.html">IPlatformBuildSetting.ArchiveSettings</a></td>
+        <td><span class="parametername">archiveSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.BuildPlayersResult.html">BuildPlayersResult</a></td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">archiveFolderName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_Build_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.Build*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_Build_OmiyaGames_Builds_BuildPlayersResult_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.Build(OmiyaGames.Builds.BuildPlayersResult)">Build(BuildPlayersResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Build(BuildPlayersResult results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.BuildPlayersResult.html">BuildPlayersResult</a></td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_Build_OmiyaGames_Builds_BuildPlayersResult_">IBuildSetting.Build(BuildPlayersResult)</a></div>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_GetPathPreview_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.GetPathPreview*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_GetPathPreview_System_Text_StringBuilder_System_Char_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.GetPathPreview(System.Text.StringBuilder,System.Char)">GetPathPreview(StringBuilder, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetPathPreview(StringBuilder builder, char pathDivider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></td>
+        <td><span class="parametername">pathDivider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OmiyaGames.Builds.IBuildSetting.html#OmiyaGames_Builds_IBuildSetting_GetPathPreview_System_Text_StringBuilder_System_Char_">IBuildSetting.GetPathPreview(StringBuilder, Char)</a></div>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_PostSuccessfulBuild_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.PostSuccessfulBuild*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_PostSuccessfulBuild_OmiyaGames_Builds_BuildPlayersResult_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.PostSuccessfulBuild(OmiyaGames.Builds.BuildPlayersResult)">PostSuccessfulBuild(BuildPlayersResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task PostSuccessfulBuild(BuildPlayersResult results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.BuildPlayersResult.html">BuildPlayersResult</a></td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_PreBuildCheck_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.PreBuildCheck*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_PreBuildCheck_System_String__" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.PreBuildCheck(System.String@)">PreBuildCheck(out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool PreBuildCheck(out string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OmiyaGames.Builds.IChildBuildSetting.html#OmiyaGames_Builds_IChildBuildSetting_PreBuildCheck_System_String__">IChildBuildSetting.PreBuildCheck(out String)</a></div>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_RevertPlayerSettings_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.RevertPlayerSettings*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_RevertPlayerSettings_OmiyaGames_Builds_IPlatformBuildSetting_LastPlayerSettings_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.RevertPlayerSettings(OmiyaGames.Builds.IPlatformBuildSetting.LastPlayerSettings)">RevertPlayerSettings(IPlatformBuildSetting.LastPlayerSettings)</h4>
+  <div class="markdown level1 summary"><p>Note: don&apos;t forget to override <pre><code>SetupPlayerSettings()</code></pre>!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RevertPlayerSettings(IPlatformBuildSetting.LastPlayerSettings lastSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IPlatformBuildSetting.LastPlayerSettings.html">IPlatformBuildSetting.LastPlayerSettings</a></td>
+        <td><span class="parametername">lastSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_SetBuildOption_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.SetBuildOption*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_SetBuildOption_BuildOptions__BuildTargetGroup_OmiyaGames_Builds_IPlatformBuildSetting_CompressionType_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.SetBuildOption(BuildOptions@,BuildTargetGroup,OmiyaGames.Builds.IPlatformBuildSetting.CompressionType)">SetBuildOption(ref BuildOptions, BuildTargetGroup, IPlatformBuildSetting.CompressionType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void SetBuildOption(ref BuildOptions options, BuildTargetGroup targetGroup, IPlatformBuildSetting.CompressionType compression)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BuildTargetGroup</span></td>
+        <td><span class="parametername">targetGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IPlatformBuildSetting.CompressionType.html">IPlatformBuildSetting.CompressionType</a></td>
+        <td><span class="parametername">compression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Builds_IPlatformBuildSetting_SetupPlayerSettings_" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.SetupPlayerSettings*"></a>
+  <h4 id="OmiyaGames_Builds_IPlatformBuildSetting_SetupPlayerSettings" data-uid="OmiyaGames.Builds.IPlatformBuildSetting.SetupPlayerSettings">SetupPlayerSettings()</h4>
+  <div class="markdown level1 summary"><p>Note: don&apos;t forget to override <pre><code>RevertPlayerSettings()</code></pre>!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IPlatformBuildSetting.LastPlayerSettings SetupPlayerSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Builds.IPlatformBuildSetting.LastPlayerSettings.html">IPlatformBuildSetting.LastPlayerSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

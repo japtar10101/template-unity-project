@@ -1,0 +1,777 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IMenu
+   | Template Unity Project documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IMenu
+   | Template Unity Project documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Menus.IMenu">
+  
+  
+  <h1 id="OmiyaGames_Menus_IMenu" data-uid="OmiyaGames.Menus.IMenu" class="text-break">Class IMenu
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract class for creating menus. <pre><code>MenuManager</code></pre> will seek for
+these scripts at the start of a scene.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">IMenu</span></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.BackgroundMenu.html">BackgroundMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.ConfirmationMenu.html">ConfirmationMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.CreditsMenu.html">CreditsMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.HighScoresMenu.html">HighScoresMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.HowToPlayMenu.html">HowToPlayMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.IOptionsMenu.html">IOptionsMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.ISceneChangingMenu.html">ISceneChangingMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.LevelIntroMenu.html">LevelIntroMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.LevelSelectMenu.html">LevelSelectMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.LoadingMenu.html">LoadingMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.MalformedGameMenu.html">MalformedGameMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.NewHighScoreMenu.html">NewHighScoreMenu</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.PopUpDialog.html">PopUpDialog</a></div>
+      <div class="level2"><a class="xref" href="OmiyaGames.Menus.SocialMediaMenu.html">SocialMediaMenu</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Menus.html">OmiyaGames.Menus</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_Menus_IMenu_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class IMenu : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Animator_" data-uid="OmiyaGames.Menus.IMenu.Animator*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Animator" data-uid="OmiyaGames.Menus.IMenu.Animator">Animator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animator Animator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Animator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Background_" data-uid="OmiyaGames.Menus.IMenu.Background*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Background" data-uid="OmiyaGames.Menus.IMenu.Background">Background</h4>
+  <div class="markdown level1 summary"><p>The type of background to display behind this menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BackgroundMenu.BackgroundType Background { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.BackgroundMenu.BackgroundType.html">BackgroundMenu.BackgroundType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_CurrentSetupState_" data-uid="OmiyaGames.Menus.IMenu.CurrentSetupState*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_CurrentSetupState" data-uid="OmiyaGames.Menus.IMenu.CurrentSetupState">CurrentSetupState</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the UI is setup or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMenu.SetupState CurrentSetupState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.SetupState.html">IMenu.SetupState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_CurrentVisibility_" data-uid="OmiyaGames.Menus.IMenu.CurrentVisibility*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_CurrentVisibility" data-uid="OmiyaGames.Menus.IMenu.CurrentVisibility">CurrentVisibility</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMenu.VisibilityState CurrentVisibility { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.VisibilityState.html">IMenu.VisibilityState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_DefaultUi_" data-uid="OmiyaGames.Menus.IMenu.DefaultUi*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_DefaultUi" data-uid="OmiyaGames.Menus.IMenu.DefaultUi">DefaultUi</h4>
+  <div class="markdown level1 summary"><p>The default UI to highlight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Selectable DefaultUi { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Selectable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_IsListeningToEvents_" data-uid="OmiyaGames.Menus.IMenu.IsListeningToEvents*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_IsListeningToEvents" data-uid="OmiyaGames.Menus.IMenu.IsListeningToEvents">IsListeningToEvents</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the Menu should be listening to the events on its own UI elements or not.
+Note the getter will check multiple flags first before returning the actual state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsListeningToEvents { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OmiyaGames_Menus_IMenu_IsListeningToEvents_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is up to the menu script itself to listen and monitor how to react to this flag changing.</p>
+</div>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_IsPausingEnabledWhileVisible_" data-uid="OmiyaGames.Menus.IMenu.IsPausingEnabledWhileVisible*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_IsPausingEnabledWhileVisible" data-uid="OmiyaGames.Menus.IMenu.IsPausingEnabledWhileVisible">IsPausingEnabledWhileVisible</h4>
+  <div class="markdown level1 summary"><p>Indicates whether one can pause while this menu is in the MenuManager stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPausingEnabledWhileVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_IsPopUpEnabledWhileVisible_" data-uid="OmiyaGames.Menus.IMenu.IsPopUpEnabledWhileVisible*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_IsPopUpEnabledWhileVisible" data-uid="OmiyaGames.Menus.IMenu.IsPopUpEnabledWhileVisible">IsPopUpEnabledWhileVisible</h4>
+  <div class="markdown level1 summary"><p>Indicates whether one can show pop-ups while this menu is in the MenuManager stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPopUpEnabledWhileVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Manager_" data-uid="OmiyaGames.Menus.IMenu.Manager*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Manager" data-uid="OmiyaGames.Menus.IMenu.Manager">Manager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static MenuManager Manager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.MenuManager.html">MenuManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_MenuType_" data-uid="OmiyaGames.Menus.IMenu.MenuType*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_MenuType" data-uid="OmiyaGames.Menus.IMenu.MenuType">MenuType</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this menu is managed or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IMenu.Type MenuType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.Type.html">IMenu.Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Navigator_" data-uid="OmiyaGames.Menus.IMenu.Navigator*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Navigator" data-uid="OmiyaGames.Menus.IMenu.Navigator">Navigator</h4>
+  <div class="markdown level1 summary"><p>Setting this ScrollRect will make the menu center to the default UI when the Show() method is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MenuNavigator Navigator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.MenuNavigator.html">MenuNavigator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_SceneChanger_" data-uid="OmiyaGames.Menus.IMenu.SceneChanger*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_SceneChanger" data-uid="OmiyaGames.Menus.IMenu.SceneChanger">SceneChanger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static SceneTransitionManager SceneChanger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SceneTransitionManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Settings_" data-uid="OmiyaGames.Menus.IMenu.Settings*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Settings" data-uid="OmiyaGames.Menus.IMenu.Settings">Settings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static GameSettings Settings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Settings.GameSettings.html">GameSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_StateField_" data-uid="OmiyaGames.Menus.IMenu.StateField*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_StateField" data-uid="OmiyaGames.Menus.IMenu.StateField">StateField</h4>
+  <div class="markdown level1 summary"><p>Name of the animator&apos;s state field</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string StateField { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_TitleTranslationArgs_" data-uid="OmiyaGames.Menus.IMenu.TitleTranslationArgs*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_TitleTranslationArgs" data-uid="OmiyaGames.Menus.IMenu.TitleTranslationArgs">TitleTranslationArgs</h4>
+  <div class="markdown level1 summary"><p>The translation arguments for the title to display in this menu (in the situation the translation text expects them, e.g. containing {0}).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object[] TitleTranslationArgs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_TitleTranslationKey_" data-uid="OmiyaGames.Menus.IMenu.TitleTranslationKey*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_TitleTranslationKey" data-uid="OmiyaGames.Menus.IMenu.TitleTranslationKey">TitleTranslationKey</h4>
+  <div class="markdown level1 summary"><p>The translation key for the title to display in this menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TitleTranslationKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Hide_" data-uid="OmiyaGames.Menus.IMenu.Hide*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Hide" data-uid="OmiyaGames.Menus.IMenu.Hide">Hide()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Hide_" data-uid="OmiyaGames.Menus.IMenu.Hide*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Hide_System_Boolean_" data-uid="OmiyaGames.Menus.IMenu.Hide(System.Boolean)">Hide(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Makes the menu hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide(bool force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_OnSetup_" data-uid="OmiyaGames.Menus.IMenu.OnSetup*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_OnSetup" data-uid="OmiyaGames.Menus.IMenu.OnSetup">OnSetup()</h4>
+  <div class="markdown level1 summary"><p>Handles setting up the UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSetup()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_OnStateChanged_" data-uid="OmiyaGames.Menus.IMenu.OnStateChanged*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_OnStateChanged_OmiyaGames_Menus_IMenu_VisibilityState_OmiyaGames_Menus_IMenu_VisibilityState_" data-uid="OmiyaGames.Menus.IMenu.OnStateChanged(OmiyaGames.Menus.IMenu.VisibilityState,OmiyaGames.Menus.IMenu.VisibilityState)">OnStateChanged(IMenu.VisibilityState, IMenu.VisibilityState)</h4>
+  <div class="markdown level1 summary"><p>Handles the menu&apos;s visiblility changing.
+Called after <pre><code>CurrentVisibility</code></pre> has already changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnStateChanged(IMenu.VisibilityState from, IMenu.VisibilityState to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.VisibilityState.html">IMenu.VisibilityState</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The last state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.VisibilityState.html">IMenu.VisibilityState</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The new state the menu is changing to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OmiyaGames_Menus_IMenu_OnStateChanged_OmiyaGames_Menus_IMenu_VisibilityState_OmiyaGames_Menus_IMenu_VisibilityState__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OmiyaGames.Menus.IMenu.html#OmiyaGames_Menus_IMenu_CurrentVisibility">CurrentVisibility</a></div>
+  </div>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_ScrollToDefaultUi_" data-uid="OmiyaGames.Menus.IMenu.ScrollToDefaultUi*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_ScrollToDefaultUi_System_Boolean_" data-uid="OmiyaGames.Menus.IMenu.ScrollToDefaultUi(System.Boolean)">ScrollToDefaultUi(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToDefaultUi(bool forceCenter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">forceCenter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Setup_" data-uid="OmiyaGames.Menus.IMenu.Setup*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Setup" data-uid="OmiyaGames.Menus.IMenu.Setup">Setup()</h4>
+  <div class="markdown level1 summary"><p>Sets up the Menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Setup()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Menus_IMenu_Show_" data-uid="OmiyaGames.Menus.IMenu.Show*"></a>
+  <h4 id="OmiyaGames_Menus_IMenu_Show_OmiyaGames_Menus_IMenu_VisibilityChanged_" data-uid="OmiyaGames.Menus.IMenu.Show(OmiyaGames.Menus.IMenu.VisibilityChanged)">Show(IMenu.VisibilityChanged)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(IMenu.VisibilityChanged stateChangedWhileManaged = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.VisibilityChanged.html">IMenu.VisibilityChanged</a></td>
+        <td><span class="parametername">stateChangedWhileManaged</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="OmiyaGames_Menus_IMenu_OnAfterVisbibilityChanged" data-uid="OmiyaGames.Menus.IMenu.OnAfterVisbibilityChanged">OnAfterVisbibilityChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event IMenu.VisibilityChanged OnAfterVisbibilityChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.VisibilityChanged.html">IMenu.VisibilityChanged</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Menus_IMenu_OnBeforeVisbibilityChanged" data-uid="OmiyaGames.Menus.IMenu.OnBeforeVisbibilityChanged">OnBeforeVisbibilityChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event IMenu.VisibilityChanged OnBeforeVisbibilityChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Menus.IMenu.VisibilityChanged.html">IMenu.VisibilityChanged</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OmiyaGames.Menus.MenuManager.html">MenuManager</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
